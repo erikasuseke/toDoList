@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="section1">
+            <h1 id="title">UŽDUOČIŲ SĄRAŠAS</h1>
+            <p>
+                <label for="new-task">Pridėti naują užduotį</label>
+                <input id="new-task" type="text">
+                <button onclick="addTask()">Pridėti</button>
+            </p>
+        </div>
+        <div class="section2">
+            <h3>Aktyvios užduotys</h3>
+            <ul id="incomplete-tasks">
+
+            </ul>
+        </div>
+        <div class="section3">
+            <h3>Atliktos užduotys</h3>
+            <ul id="completed-tasks">
+                <li>
+                    <input type="checkbox" checked="">
+                    <label>Išmokti HTML</label>
+                    <input type="text">
+                    <button class="edit">Keisti</button>
+                    <button class="delete">Ištrinti</button>
+                </li>
+            </ul>
+        </div>
+        <div class="section4">
+            <button id="clear">Išvalyti</button>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+
+</html>
